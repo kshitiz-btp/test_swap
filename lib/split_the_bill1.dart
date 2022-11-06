@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muncho_bill_split/split_the_bill2.dart';
+import 'package:muncho_bill_split/split_the_bill3.dart';
 
 import 'constants.dart';
 
@@ -11,7 +12,12 @@ class SplitTheBill1 extends StatefulWidget {
 }
 
 class _SplitTheBill1State extends State<SplitTheBill1> {
-  void navigatetootherscreen() {
+  void navigatetootherscreen3() {
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (_) => SplitTheBill3()));
+  }
+
+  void navigatetootherscreen2() {
     Navigator.of(context)
         .push(MaterialPageRoute(builder: (_) => SplitTheBill2()));
   }
@@ -259,7 +265,7 @@ class _SplitTheBill1State extends State<SplitTheBill1> {
                             SizedBox(height: 30),
                             ElevatedButton(
                               onPressed: () {
-                                navigatetootherscreen();
+                                navigatetootherscreen2();
                               },
                               style: ElevatedButton.styleFrom(
                                 fixedSize: const Size(358, 48),
@@ -280,7 +286,7 @@ class _SplitTheBill1State extends State<SplitTheBill1> {
                             SizedBox(height: 20),
                             ElevatedButton(
                               onPressed: () {
-                                navigatetootherscreen();
+                                navigatetootherscreen3();
                               },
                               style: ElevatedButton.styleFrom(
                                 fixedSize: const Size(358, 48),
